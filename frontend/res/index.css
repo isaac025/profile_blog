@@ -1,0 +1,73 @@
+body {
+    background-image: url("./background.jpg");
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: #153450;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 703px;
+    height: 871px;
+    margin: 0 auto;
+    background: #447294;
+    border-radius: 50px;
+}
+
+h2 {
+    position: absolute;
+    width: 237px;
+    height: 44px;
+    left: 150px;
+    top: 66px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F4D6BC;
+}
+
+h3 {
+    position: absolute;
+    left: 311px;
+    top: 434px;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F4D6BC;
+}
+
+.bat {
+    position: absolute;
+    left: 253px;
+    top: 453px;
+}
+
+.intro {
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    justify-content: center;
+    color: #F8E4CC;
+}
+
+ul {
+    position: absolute;
+    width: 319px;
+    left: 85px;
+    top: 125px;
+}
+.profile {
+    position: absolute;
+    left: 457px;
+    top: 70px;
+}
