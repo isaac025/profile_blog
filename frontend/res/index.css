@@ -1,73 +1,273 @@
-body {
-    background-image: url("./background.jpg");
+@media (min-width: 55em) {
+	.lol { display: inline-block; vertical-align: top ; }
+
+	.profile, .disappear {
+		display: block ;
+		float: right;
+		padding: 20px ;
+		clear: both ;
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	.resmid {
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	main { max-width: 850px ; }
+
+	.column {
+		float: left;
+		width: 50% ;
+	}
+
 }
 
-h1 {
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-    font-size: 36px;
-    color: #153450;
+p img, li img, h1 img, h2 img, h3 img, h4 img {
+	max-height: 1em;
+	max-width: 1em;
+	vertical-align: middle ;
 }
 
-.block {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 703px;
-    height: 871px;
-    margin: 0 auto;
-    background: #447294;
-    border-radius: 50px;
+sup { vertical-align: top; font-size: 0.6em; }
+
+nav,footer {
+    text-align: center ;
+    font-variant: small-caps ;
+    clear: both ;
 }
 
-h2 {
-    position: absolute;
-    width: 237px;
-    height: 44px;
-    left: 150px;
-    top: 66px;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #F4D6BC;
+nav { font-size: small ;}
+
+footer { font-size: large ; }
+
+nav li,footer li {
+	display: inline-block ;
+	list-style: none ;
+	background: rgba(0,0,0,.3) ;
+	border-radius: 10px ;
+	padding: .5em ;
+	max-width: 7em ;
 }
 
-h3 {
-    position: absolute;
-    left: 311px;
-    top: 434px;
-    font-style: bold;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #F4D6BC;
+
+nav ul, footer ul, #taglist {
+	padding: 0;
 }
 
-.bat {
-    position: absolute;
-    left: 253px;
-    top: 453px;
+nav a li:hover, footer a li:hover {
+	background: goldenrod ;
+	color: black ;
 }
 
-.intro {
-    display: flex;
-    font-size: 18px;
-    line-height: 21px;
-    justify-content: center;
-    color: #F8E4CC;
+main {
+	margin: auto ;
+	color: #ddd ;
+	background: rgba(0,0,0,.3) ;
+	padding: 20px ;
+	border-radius: 50px ;
+        height: 1000px;
+}
+
+strong { color: white ; }
+
+a strong { color: lime ; }
+
+details { padding-left: 20px ; text-decoration: underline; }
+
+pre {
+	background: #222 ;
+	border: 1px solid lime ;
+	border-radius: 20px ;
+	padding: 1em ;
+	margin: 1em ;
+	white-space: pre-wrap;
+}
+
+code {
+	background: #222 ;
+	color: lime ;
+	border-radius: 5px ;
+	overflow-wrap: break-word ;
+}
+
+#cryptoaddr {
+	overflow-wrap: break-word ;
+	font-size: small ;
 }
 
 ul {
-    position: absolute;
-    width: 319px;
-    left: 85px;
-    top: 125px;
+	margin-left: 20px ;
+	margin-right: 20px ;
 }
-.profile {
-    position: absolute;
-    left: 457px;
-    top: 70px;
+
+li img, p img {
+	max-height: 1em ;
+	max-width: 1em ;
+}
+
+html {
+	padding-top: 10px;
+	background: linear-gradient(#282828, #928374) no-repeat fixed ;
+	margin-bottom: 500px;
+
+}
+
+h1,h2,h3,h4 { text-align: center ; }
+
+h1 { color: #cc241d ; }
+
+h2 { color: #cc241d ; }
+
+h2 a { color: #cc241d ; }
+
+h3 { color: #d79921 ; }
+
+h4 { color:  ; }
+
+a { color: #98971a ; text-decoration: none ;}
+
+a:hover { color: #b8bb26 ;}
+h2 a:hover { color: #fb4934}
+.new a:hover { color: #b8bb26 ; }
+
+
+dt { font-weight: bold ; color: lightgray ; }
+
+.profile, .resmid {
+	display: block ;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 300px ;
+}
+
+.disappear {
+	display: none ;
+}
+
+.titleimg {
+	display: block ;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+}
+
+.lol {
+	padding: .25em ;
+}
+
+.lol ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.entry p, .entry li { margin-left: 2em ; }
+
+figure img { max-width: 100% ; margin: auto ; }
+
+figcaption { font-style: italic ; font-size: small ; }
+
+figure { text-align: center; }
+
+#toc {
+	font-size: x-large ;
+	margin-left: auto ;
+	margin-right: auto ;
+	max-width: 500px ;
+
+}
+
+#toc li { padding: 5px }
+
+.new::after {
+	content: " ðŸ†•" ;
+	/* content: " (New ðŸŽ)" ; */
+	color: goldenrod ;
+}
+
+.i a { color: green ;}
+.d a { color: red ;}
+
+/* For QR codes for bitcoin and crypto */
+.qr { max-width: 150px ; padding: 10px }
+
+.entryinfo {
+	text-align: center ;
+	font-size: x-small ;
+	margin: 0 ;
+}
+
+#mainmenu {
+	font-size: large ;
+}
+
+#tagcloud {
+	padding: 0;
+	font-size: small ;
+	font-variant: small-caps ;
+	background: #458588 ;
+	border-radius: 10px ;
+	text-align: center ;
+}
+
+#tagcloud li {
+	display: inline-block ;
+	padding: 0.5em ;
+	margin: 0.5em ;
+	width: auto ;
+	background: #83a598 ;
+	border-radius: 10px ;
+}
+
+#tagcloud li:hover {
+	background: #fbf1c7 ;
+}
+
+#tagcloud a { color: black ; }
+
+#taglist {
+	max-width: 300px ;
+	margin: auto ;
+	text-align: center ;
+	display: block ;
+}
+
+#taglist li {
+	display: inline-block ;
+	padding-right: 0.5em ;
+	padding-left: 0.5em ;
+}
+
+#taglist::before { content: "This article is tagged as:" ; display: block; font-size: small ; }
+
+#taglist::after { content: "Click the links above for related articles." ; display: block ;  font-size: small ;}
+
+#mainmenu dd {
+  display: inline;
+  margin: 0;
+}
+#mainmenu dd:after{
+  display: block;
+  content: '';
+}
+#mainmenu dt{
+  display: inline-block;
+  min-width: 100px;
+}
+
+aside {
+	font-style: italic ;
+	font-size: small ;
+	color: lightgray ;
+	margin-left: 3em ;
+	margin-right: 3em ;
+	padding: 0 1em 0 1em ;
+	border: 1px solid black ;
+	border-radius: 20px ;
+}
+
+blockquote {
+	text-align: center ;
 }
