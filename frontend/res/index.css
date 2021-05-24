@@ -111,7 +111,7 @@ html {
 	padding-top: 10px;
 	background: linear-gradient(#282828, #928374) no-repeat fixed ;
 	margin-bottom: 500px;
-        font-family: UbuntuMono Nerd Font Mono;
+        font-family: "./fonts/'Ubuntu Mono Nerd Font Complete.ttf'";
 }
 
 h1,h2,h3,h4 { text-align: center ; }
